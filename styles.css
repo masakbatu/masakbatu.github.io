@@ -1,0 +1,251 @@
+/* Reset dan set beberapa gaya dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+nav {
+  background-color: #1e3a8a;
+  padding: 15px 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav .nav-links li {
+  display: inline-block;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+  background-color: #4caf50;
+}
+
+/* Hero Section */
+#home {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#home h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+#home .btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+#home .btn:hover {
+  background-color: #45a049;
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.grid .item {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid .item:hover {
+  transform: translateY(-10px);
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.grid p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* About Section */
+#about {
+  background-color: #f4f7fa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.about-text {
+  text-align: left;
+  font-size: 1.2em;
+  max-width: 800px;
+}
+
+#about h3 {
+  font-size: 2em;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f4f7fa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Gaya untuk tombol media sosial */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: #4caf50;
+  transform: translateY(-5px);
+}
+
+/* Ikon Sosial */
+.social-btn i {
+  margin-right: 10px;
+}
+
+/* Ikon media sosial khusus */
+.instagram {
+  background-color: #e1306c;
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+
+.telegram {
+  background-color: #0088cc;
+}
+
+/* Gaya responsif */
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1em;
+}
