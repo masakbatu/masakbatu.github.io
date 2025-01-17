@@ -15,7 +15,6 @@
     />
   </head>
   <body>
-    <!-- Navbar -->
     <nav>
       <div class="container">
         <h1 class="logo">Masak Batu</h1>
@@ -25,9 +24,14 @@
           <li><a href="#about">Tentang</a></li>
           <li><a href="#contact">Kontak</a></li>
         </ul>
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
       </div>
     </nav>
-
     <!-- Hero Section -->
     <section id="home">
       <div class="hero-content">
@@ -142,5 +146,13 @@
         <p>&copy; 2025 Desain Logo Masak Batu. Semua Hak Dilindungi.</p>
       </div>
     </footer>
+
+    <script>
+      // JavaScript untuk toggle navbar
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
