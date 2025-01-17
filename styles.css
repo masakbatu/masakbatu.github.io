@@ -91,6 +91,25 @@ nav .hamburger .line {
   nav .hamburger {
     display: flex;
   }
+
+  .container {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .hero-content {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .about-content {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .social-links {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
 }
 
 /* Hero Section */
