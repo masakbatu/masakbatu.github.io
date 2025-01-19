@@ -259,6 +259,7 @@ footer p {
     padding: 0.5rem;
     color: Black;
     text-decoration: none;
+    margin:0;
   }
 
   .hub {
