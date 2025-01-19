@@ -20,8 +20,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #333;
-        padding: 10px 20px;
+        background-color: rgb(0, 94, 255);
+        padding: 10px 7%;
       }
 
       nav .logo {
@@ -60,13 +60,14 @@
 
       .hero {
         text-align: center;
-        padding: 50px 20px;
-        background-color: #f4f4f4;
+        padding: 50px 7%;
+        background-color: rgb(0, 94, 255);
+        color: white;
+        background-color: rgb(0, 94, 255);
       }
 
       .hero h1 {
         font-size: 2.5rem;
-        margin-bottom: 20px;
       }
 
       .hero p {
@@ -106,13 +107,13 @@
       .logo-item h3 {
         margin-top: 10px;
         font-size: 1.2rem;
-        color: #333;
+        color: white;
         border-radius: 5px;
         background-color: #47b6fc;
       }
 
       footer {
-        background-color: #333;
+        background-color: rgb(0, 94, 255);
         color: #fff;
         text-align: center;
         padding: 20px;
@@ -140,7 +141,7 @@
         nav ul {
           display: none;
           flex-direction: column;
-          background-color: #333;
+          background-color: #47b6fc;
           position: absolute;
           top: 60px;
           right: 20px;
@@ -162,11 +163,79 @@
           padding: 10px 20px;
         }
       }
+
+      .about {
+        padding: 50px 20px;
+        text-align: center;
+        background-color: #f9f9f9;
+      }
+
+      .about h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .about p {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        color: #555;
+      }
+
+      .pic {
+        width: 150px;
+        border-radius: 50%;
+      }
+
+      .contact {
+        padding: 50px 20px;
+        text-align: center;
+        background-color: #f4f4f4;
+      }
+
+      .contact h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .contact a {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 15px;
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+
+      .contact a.instagram {
+        background-color: #e4405f;
+      }
+
+      .contact a.instagram:hover {
+        background-color: #c32a58;
+      }
+
+      .contact a.telegram {
+        background-color: #0088cc;
+      }
+
+      .contact a.telegram:hover {
+        background-color: #006699;
+      }
+
+      .contact a.whatsapp {
+        background-color: #25d366;
+      }
+
+      .contact a.whatsapp:hover {
+        background-color: #1ebe57;
+      }
     </style>
   </head>
   <body>
     <nav>
-      <a href="#" class="logo">My Logos</a>
+      <a href="#" class="logo">Masak Batu</a>
       <span class="menu-toggle">&#9776;</span>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -176,10 +245,12 @@
     </nav>
 
     <div class="hero" id="home">
-      <h1>Welcome to My Logo Showcase</h1>
+      <h1>Welcome to</h1>
+      <h1>Masak Batu Tempatnya Design Logo</h1>
       <p>
-        Explore a collection of professionally designed logos to inspire your
-        next project.
+        Buat Logo terbaikmu disini, Jasa Pembuatan Logo Design Mewah dan
+        Minimalist, Explore a collection of professionally designed logos to
+        inspire your next project.
       </p>
     </div>
 
@@ -200,6 +271,38 @@
         <img src="./assets/tambler.png" alt="Logo 4" />
         <h3>Logo Design 4</h3>
       </div>
+    </div>
+
+    <div class="about" id="about">
+      <h2>About Me</h2>
+
+      <img class="pic" src="./assets/pic.jpg" alt="" />
+      <h4>Hello Im Wahyu</h4>
+      <p>Web Developer And Designer Graphic</p>
+      <p>
+        Hello! I'm a passionate logo designer and web developer dedicated to
+        creating unique and visually stunning designs.
+        <br />With years of experience in graphic design and coding, I aim to
+        deliver high-quality <br />
+        work that captures the essence of your brand. Feel free to reach out if
+        you'd like to collaborate or learn more about my work!
+      </p>
+    </div>
+
+    <div class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <a
+        href="https://instagram.com/masakbatu"
+        class="instagram"
+        target="_blank"
+        >Instagram</a
+      >
+      <a href="https://t.me/wahyumasakbatu" class="telegram" target="_blank"
+        >Telegram</a
+      >
+      <a href="https://wa.me/085334566372" class="whatsapp" target="_blank"
+        >WhatsApp</a
+      >
     </div>
 
     <footer>
