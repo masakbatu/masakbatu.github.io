@@ -1,6 +1,7 @@
 :root {
   --putih: #ffffff;
-  --putih1: #efeded;
+  --putih1: #e2e2e2;
+  --hijau: green;
 }
 
 @font-face {
@@ -74,7 +75,7 @@ body {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background-color: rgb(164, 211, 220);
+  background-color: var(--hijau);
   border-radius: 5px;
   transition: transform 0.3s;
 }
@@ -132,10 +133,10 @@ body {
 }
 
 .contact ul a {
-  background-color: rgb(164, 211, 220);
+  background-color: var(--hijau);
   border-radius: 5px;
   padding: 1rem 2rem;
-  color: Black;
+  color: white;
   text-decoration: none;
   margin: 0 1rem;
 }
@@ -174,7 +175,72 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 7%;
+  background-color: var(--putih1);
+}
+
+.paket {
+  color: black;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--putih1);
+  gap: 2rem;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+}
+
+.titlepaket {
   background-color: var(--putih);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding: 3rem;
+}
+
+.pak1 {
+  background-color: var(--putih);
+  width: 20rem;
+  height: 23rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px 2px black;
+}
+
+.pak1 ul {
+  margin: 2rem;
+}
+
+.pak2 {
+  background-color: var(--putih);
+  border-radius: 25px;
+  box-shadow: 1px 1px 2px black;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  color: var(--hijau);
+  font-weight: bold;
+}
+
+.order div {
+  width: 25rem;
+  height: 10rem;
+  background-color: var(--putih);
+  border: 1.5px solid black;
+  color: black;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .titletools {
@@ -183,7 +249,7 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: var(--putih1);
+  background-color: var(--putih);
   padding-top: 3rem;
   color: black;
 }
@@ -222,23 +288,8 @@ body {
   gap: 1rem;
 }
 
-.order div {
-  width: 25rem;
-  height: 10rem;
-  background-color: var(--putih1);
-  color: black;
-  border-radius: 15px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  gap: 1rem;
-}
-
 .tools div h1 {
-  color: rgb(164, 211, 220);
+  color: var(--hijau);
 }
 
 .hub {
@@ -306,6 +357,7 @@ footer p {
   text-align: center;
   padding-top: 2rem;
   margin-bottom: 10rem;
+  color: black;
 }
 
 /* Responsive Styles */
@@ -379,10 +431,10 @@ footer p {
   }
 
   .contact ul a {
-    background-color: rgb(164, 211, 220);
+    background-color: var(--hijau);
     border-radius: 5px;
     padding: 0.5rem;
-    color: Black;
+    color: white;
     text-decoration: none;
     margin: 0;
   }
